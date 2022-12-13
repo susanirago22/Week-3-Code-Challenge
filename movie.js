@@ -15,10 +15,10 @@ function firstMovie(){
             const movie = document.querySelector('.movie');
             movie.innerHTML = 
             `
-            <div class="img">
+
             <div class="movie-details">
               <ul id="details">
-                <li>Run Time: ${data.runtime} minutes</li>
+                <li>Run Time: ${data.runtime} </li>
                 <li>Show Time: ${data.showtime}</li>
               </ul>
             </div>

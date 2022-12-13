@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('clicked');
     });
 });
-function firstMovie(){
+function Movie(){
 
    
     fetch('http://localhost:8000/films/1')

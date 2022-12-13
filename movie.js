@@ -4,24 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('clicked');
     });
 });
-function Movie(){
+function film(){
+    const returnFetch = fetch('http://localhost:8000/films/1d')
+  .then((resp) => resp.json())
+  .then((json) => renderfilm(json));
+  return returnFetch;
+}
+
+function renderfilm(film) {
+  const main = document.querySelector('main');
+  books.forEach(film => {
+    const h2 = document.createElement('h2');
+    h2.innerHTML = film
+    main.appendChild(h2);
+  });
+}
+
 
    
-    fetch('http://localhost:8000/films/1')
-    .then(res => res.json())
-    .then(data => 
-        {   
-            console.log(data)
-            const movie = document.querySelector('.movie');
-            movie.innerHTML = 
-            `
-
-            <div class="movie-details">
-              <ul id="details">
-                <li>Run Time: ${data.runtime} </li>
-                <li>Show Time: ${data.showtime}</li>
-              </ul>
-            </div>
-            `
-        })
-    }
+    

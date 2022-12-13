@@ -13,7 +13,7 @@ function film(){
 
 function renderfilm(film) {
   const main = document.querySelector('main');
-  books.forEach(film => {
+  film.forEach(film => {
     const h2 = document.createElement('h2');
     h2.innerHTML = film
     main.appendChild(h2);

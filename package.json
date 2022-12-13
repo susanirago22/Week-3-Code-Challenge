@@ -1,0 +1,24 @@
+{
+  "name": "week-3-code-challenge",
+  "version": "1.0.0",
+  "description": "In order for you to use the content on this repo ensure you have the following: -- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)",
+  "main": "movie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-json":"json-server--watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susanirago22/Week-3-Code-Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susanirago22/Week-3-Code-Challenge/issues"
+  },
+  "homepage": "https://github.com/susanirago22/Week-3-Code-Challenge#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
